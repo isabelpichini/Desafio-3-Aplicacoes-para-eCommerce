@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  align-items: center;
+  width: 1440px;
+  padding: 1.75rem 8rem;
+  justify-self: center;
+  justify-content: space-between;
+  color: var(--color-primary);
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    nav ul {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+
+      li a {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+
+    .input-container {
+      border: none !important;
+    }
+
+    .currency {
+      display: flex;
+      gap: 0.25rem;
+      align-items: center;
+    }
+  }
+}
