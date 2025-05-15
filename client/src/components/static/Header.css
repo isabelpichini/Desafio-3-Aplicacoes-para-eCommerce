@@ -1,0 +1,44 @@
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 1.75rem 8rem;
+  justify-content: space-between;
+  color: var(--color-primary);
+  z-index: 2;
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    nav ul {
+      display: flex;
+      gap: 3rem;
+      list-style: none;
+
+      li a {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+
+    .input-container {
+      border: none !important;
+      border-radius: 99px !important;
+    }
+
+    .currency {
+      display: flex;
+      gap: 0.25rem;
+      align-items: center;
+    }
+  }
+}

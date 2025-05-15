@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#hero {
+  display: flex;
+  height: 43rem;
+  background: var(--gradient);
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+
+  .hero-wrapper {
+    position: relative;
+    display: flex;
+    padding: 0 8rem;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1440px;
+    gap: 2rem;
+    color: var(--color-primary-80);
+    justify-content: center;
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      z-index: 2;
+
+      h1 {
+        margin-bottom: 0.25rem;
+      }
+      h2 {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+
+      .button-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}

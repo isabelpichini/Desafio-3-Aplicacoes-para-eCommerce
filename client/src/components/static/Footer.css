@@ -1,0 +1,126 @@
+@import url("../../tokens.css");
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: var(--gradient);
+  border-radius: 2.5rem 2.5rem 0 0;
+  z-index: 2;
+
+  .footer-wrapper {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 5rem 8rem 2.5rem 8rem;
+
+    .register {
+      background-color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      padding: 2rem;
+      border-radius: 1rem;
+
+      h3 {
+        min-width: 40%;
+        color: var(--color-neutral-00);
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        background-color: var(--color-neutral-00);
+        padding: 0.75rem;
+        gap: 0.75rem;
+        border-radius: 0.875rem;
+        width: 100%;
+
+        .input {
+          width: 100%;
+          .input-wrapper {
+            width: 100%;
+            .input-container {
+              width: 100%;
+            }
+          }
+        }
+
+        .button {
+          border-radius: 0.5rem;
+          padding: 0.875rem 1.25rem;
+          flex-shrink: 0;
+          line-height: 1.4;
+        }
+      }
+    }
+
+    .links-socials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 2.5rem;
+      border-bottom: solid 1px var(--color-neutral-20);
+
+      nav ul {
+        display: flex;
+        gap: 3.75rem;
+        list-style: none;
+
+        li a {
+          color: var(--color-neutral-100);
+          text-decoration: none;
+
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+      }
+
+      .socials {
+        display: flex;
+        gap: 2.5rem;
+
+        a {
+          color: var(--color-neutral-100);
+
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+
+    .copyright {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        color: var(--color-neutral-60);
+      }
+
+      img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      nav ul {
+        display: flex;
+        gap: 1.5rem;
+        list-style: none;
+
+        li a {
+          color: var(--color-neutral-60);
+
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+      }
+    }
+  }
+}
